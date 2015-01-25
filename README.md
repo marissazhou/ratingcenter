@@ -3,19 +3,19 @@ The OpenShift `nodejs` cartridge documentation can be found at:
 http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
 
 ##tutorial:
-*http://git-scm.com/book/en/v2
-*https://help.github.com/articles/markdown-basics/
+* http://git-scm.com/book/en/v2
+* https://help.github.com/articles/markdown-basics/
 
 ##Team
-*Tim(tim@rewardrefer.com)
-*Lala
-*Anqi
-*Tony
-*Chao
-*Enda
-*Chris
-*Rabbit
-*Jing 
+- Tim(tim@rewardrefer.com)
+- Lala
+- Chris
+- Anqi
+- Tony
+- Chao
+- Enda
+- Jing 
+- Rabbit
 
 ##ToDo List:
 1. articulate the idea of rating
