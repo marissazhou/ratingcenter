@@ -6,7 +6,7 @@ http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
 Follow the steps
 https://developers.openshift.com/en/getting-started-windows.html#making-first-change
 until 
-* `C:\> rhc setup`
+* `C:\> rhc setup -l 'account'`
 when prompted using hostname:  master.openshift.monevalue.com
 with the provided credentials.
 after login
