@@ -6,8 +6,19 @@ http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
 Follow the steps
 https://developers.openshift.com/en/getting-started-windows.html#making-first-change
 until `C:\> rhc setup`
-But using hostname:  master.openshift.monevalue.com
+when prompted using hostname:  master.openshift.monevalue.com
 with the provided credentials.
+
+##workflow from local
+* edit the files
+* git add `the file`
+* git commit -m "your message"
+* git push  //will update the product online.
+
+##workflow from github
+* edit files on github   
+* git pull ratingcenter master  //run on local
+* git push  //will update the product online.
 
 
 ##tutorial:
@@ -27,6 +38,10 @@ with the provided credentials.
 
 ##ToDo List:
 1. articulate the idea of rating
+良莠不齐的培训市场，需要一个统一的公正的点评系统来评估他们。
 2. design the architecture
+* front-end AngularJS, bootstrap
+* backend nodejs
+* mongodb
 3. design the UX
 4. workflow
