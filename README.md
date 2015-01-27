@@ -41,6 +41,7 @@ after login
 - Enda
 - Jing 
 - Rabbit
+- Conrad
 
 ##ToDo List:
 1. articulate the idea of rating
