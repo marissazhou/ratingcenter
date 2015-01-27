@@ -29,7 +29,7 @@ after login
 * http://git-scm.com/book/en/v2
 * https://help.github.com/articles/markdown-basics/
 * http://mgcrea.github.io/angular-strap/
-* 
+* http://nqdeng.github.io/7-days-nodejs/
 
 ##Team
 - Tim(tim@rewardrefer.com)
