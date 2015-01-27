@@ -109,21 +109,21 @@ var SampleApp = function() {
             res.send(self.cache_get('index.html') );
         };
         self.routes['/css/bootstrap.min.css'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/html');
+            res.setHeader('Content-Type', 'text/css');
             res.send(self.cache_get('bootstrap.min.css') );
         };	
 
         self.routes['/css/style.css'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/html');
+            res.setHeader('Content-Type', 'text/css');
             res.send(self.cache_get('style.css') );
         };	
 		
         self.routes['/js/script.js'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/html');
+            res.setHeader('Content-Type', 'text/js');
             res.send(self.cache_get('script.js') );
         };		
         self.routes['/js/bootstrap.min.js'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/html');
+            res.setHeader('Content-Type', 'text/js');
             res.send(self.cache_get('bootstrap.min.js') );
         };			
     };
