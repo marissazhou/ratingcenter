@@ -44,6 +44,10 @@ var SampleApp = function() {
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
+        self.zcache['bootstrap.min.js'] = fs.readFileSync('./js/bootstrap.min.js');	
+        self.zcache['script.js'] = fs.readFileSync('./js/script.js');	
+        self.zcache['bootstrap.min.css'] = fs.readFileSync('./css/bootstrap.min.css');	
+        self.zcache['style.css'] = fs.readFileSync('./css/style.css');			
     };
 
 
@@ -104,6 +108,24 @@ var SampleApp = function() {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('index.html') );
         };
+        self.routes['/css/bootstrap.min.css'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('bootstrap.min.css') );
+        };	
+
+        self.routes['/css/style.css'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('style.css') );
+        };	
+		
+        self.routes['/js/script.js'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('script.js') );
+        };		
+        self.routes['/js/bootstrap.min.js'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('bootstrap.min.js') );
+        };			
     };
 
 
