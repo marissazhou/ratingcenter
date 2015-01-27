@@ -29,7 +29,8 @@ after login
 * http://git-scm.com/book/en/v2
 * https://help.github.com/articles/markdown-basics/
 * http://mgcrea.github.io/angular-strap/
-* http://nqdeng.github.io/7-days-nodejs/
+* http://nqdeng.github.io/7-days-nodejs/ In Chinese; not suggested
+* http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/ 
 
 ##Team
 - Tim(tim@rewardrefer.com)
