@@ -44,10 +44,10 @@ var SampleApp = function() {
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
-        self.zcache['bootstrap.min.js'] = fs.readFileSync('./js/bootstrap.min.js');	
-        self.zcache['script.js'] = fs.readFileSync('./js/script.js');	
-        self.zcache['bootstrap.min.css'] = fs.readFileSync('./css/bootstrap.min.css');	
-        self.zcache['style.css'] = fs.readFileSync('./css/style.css');			
+//        self.zcache['bootstrap.min.js'] = fs.readFileSync('./js/bootstrap.min.js');	
+//        self.zcache['script.js'] = fs.readFileSync('./js/script.js');	
+//        self.zcache['bootstrap.min.css'] = fs.readFileSync('./css/bootstrap.min.css');	
+//        self.zcache['style.css'] = fs.readFileSync('./css/style.css');			
     };
 
 
