@@ -34,7 +34,7 @@ after login
 
 ##Team
 - Tim(tim@rewardrefer.com)
-- Lala
+- Lala (marissa.work7@gmail.com)
 - Chris
 - Anqi
 - Tony
