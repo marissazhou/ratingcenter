@@ -28,6 +28,8 @@ after login
 ##tutorial:
 * http://git-scm.com/book/en/v2
 * https://help.github.com/articles/markdown-basics/
+* http://mgcrea.github.io/angular-strap/
+* 
 
 ##Team
 - Tim(tim@rewardrefer.com)
