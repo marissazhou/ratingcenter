@@ -44,10 +44,10 @@ var SampleApp = function() {
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
-//        self.zcache['bootstrap.min.js'] = fs.readFileSync('./js/bootstrap.min.js');	
-//        self.zcache['script.js'] = fs.readFileSync('./js/script.js');	
-//        self.zcache['bootstrap.min.css'] = fs.readFileSync('./css/bootstrap.min.css');	
-//        self.zcache['style.css'] = fs.readFileSync('./css/style.css');			
+//        self.zcache['bootstrap.min.js'] = fs.readFileSync('./js/bootstrap.min.js');
+//        self.zcache['script.js'] = fs.readFileSync('./js/script.js');
+//        self.zcache['bootstrap.min.css'] = fs.readFileSync('./css/bootstrap.min.css');
+//        self.zcache['style.css'] = fs.readFileSync('./css/style.css');
     };
 
 
@@ -108,24 +108,24 @@ var SampleApp = function() {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('index.html') );
         };
-        self.routes['/css/bootstrap.min.css'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/css');
-            res.send(self.cache_get('bootstrap.min.css') );
-        };	
-
-        self.routes['/css/style.css'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/css');
-            res.send(self.cache_get('style.css') );
-        };	
-		
-        self.routes['/js/script.js'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/javascript');
-            res.send(self.cache_get('script.js') );
-        };		
-        self.routes['/js/bootstrap.min.js'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/javascript');
-            res.send(self.cache_get('bootstrap.min.js') );
-        };			
+        // self.routes['/css/bootstrap.min.css'] = function(req, res) {
+        //     res.setHeader('Content-Type', 'text/css');
+        //     res.send(self.cache_get('bootstrap.min.css') );
+        // };
+        //
+        // self.routes['/css/style.css'] = function(req, res) {
+        //     res.setHeader('Content-Type', 'text/css');
+        //     res.send(self.cache_get('style.css') );
+        // };
+        //
+        // self.routes['/js/script.js'] = function(req, res) {
+        //     res.setHeader('Content-Type', 'text/javascript');
+        //     res.send(self.cache_get('script.js') );
+        // };
+        // self.routes['/js/bootstrap.min.js'] = function(req, res) {
+        //     res.setHeader('Content-Type', 'text/javascript');
+        //     res.send(self.cache_get('bootstrap.min.js') );
+        // };
     };
 
 
@@ -137,8 +137,8 @@ var SampleApp = function() {
         self.createRoutes();
         self.app = express.createServer();
 
-		self.app.use("/js", express.static(__dirname + '/js'));	
-		self.app.use("/css", express.static(__dirname + '/css'));			
+		self.app.use("/js", express.static(__dirname + '/js'));
+		self.app.use("/css", express.static(__dirname + '/css'));
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
             self.app.get(r, self.routes[r]);
@@ -180,4 +180,3 @@ var SampleApp = function() {
 var zapp = new SampleApp();
 zapp.initialize();
 zapp.start();
-
