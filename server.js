@@ -119,11 +119,11 @@ var SampleApp = function() {
         };	
 		
         self.routes['/js/script.js'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/js');
+            res.setHeader('Content-Type', 'text/javascript');
             res.send(self.cache_get('script.js') );
         };		
         self.routes['/js/bootstrap.min.js'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/js');
+            res.setHeader('Content-Type', 'text/javascript');
             res.send(self.cache_get('bootstrap.min.js') );
         };			
     };
